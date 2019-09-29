@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>::before</title>
+		<style>
+			p::before {
+				content: "insertpan <br />";
+			}
+			p::after {
+				content: "after";
+			}
+			q::before {
+				content: "what will happen?";
+			}
+			li::before {
+				content: "12";
+			}
+			::selection {
+				color: #FFFFFF;
+				background-color: #993366;
+			};
+		</style>
+	</head>
+	<body>
+		<p>I am a p</p>
+		<q>I am a q</q>
+		<ul>
+			<li>a</li>
+			<li>b</li>
+			<li>c</li>
+		</ul>
+	</body>
+</html>
