@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>list-style-position</title>
+		<style>
+			/*ol {
+				list-style-position: outside;
+				}
+			li {
+				padding-left: 40px;
+				line-height: 3em;
+				}*/
+				ol li {
+					list-style-type: none;
+					
+				}
+				ol li:before {
+					content: counter(item) ".";
+					color: red;
+				}			
+		</style>
+	</head>
+	<body>
+		<ol>
+			<li>幻夜</li>
+			<li>超杀人事件</li>
+			<li>信</li>
+			<li>虚无的十字架</li>
+		</ol>
+	</body>
+</html>
